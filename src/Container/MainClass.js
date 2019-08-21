@@ -13,15 +13,15 @@ class MainClass extends React.Component {
     this.Webcam = Webcam;
   };
 
-  /*
-    loadJsPromise.all([
-        faceapi.nets.tinyFaceDetectortinyFaceDetector,
-        faceapi.nets.faceLandmark68Net.faceLandmark68Net,
-        faceapi.nets.faceRecognitionNet.faceRecognitionNet,
-        faceapi.nets.faceExpressionNet.faceExpressionNet
+  
+    Promise.all([
+        faceapi.nets.tinyFaceDetectortinyFaceDetector.loadFromUri('/model'),
+        faceapi.nets.faceLandmark68Net.faceLandmark68Net('/model'),
+        faceapi.nets.faceRecognitionNet.faceRecognitionNet('/model'),
+        faceapi.nets.faceExpressionNet.faceExpressionNet('/model')
     ]);
   
-  */
+  
 
   getVideo = () => {
     const video1 = document.getElementsByClassName("vid");

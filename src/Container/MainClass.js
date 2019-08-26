@@ -4,7 +4,8 @@ import tinyFaceDetector from '../models/tinyFaceDetector.json';
 import faceLandmark68Net from '../models/faceLandmark68Net.json';
 import faceRecognitionNet from '../models/faceRecognitionNet.json';
 import faceExpressionNet from '../models/faceExpressionNet.json';
-import * as faceapi from '../../src/face-api.min.js'
+import * as faceapi from '../../src/face-api.min.js';
+import check from '../Container/webcam'
 // import Cam from './Presentational/cam';
 
 
